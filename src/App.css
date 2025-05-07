@@ -1,0 +1,122 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em var(--colors-primary--500));
+  animation: pulse 2s infinite;
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em var(--colors-secondary--500));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: var(--colors-bg--300);
+  border: 1px solid var(--colors-primary--600);
+  border-radius: 0.5rem;
+  box-shadow: var(--ui-glow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px var(--colors-primary--500);
+}
+
+.read-the-docs {
+  color: var(--colors-primary--300);
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 5px var(--colors-primary--500);
+}
+
+/* Fast clouds animation */
+.fast-clouds {
+  width: 10000px;
+  height: 100%;
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+  background-size: 800px 800px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  opacity: 0.2;
+  transform: scaleX(-1);
+
+  -moz-animation: move-background 30s linear infinite;
+  -ms-animation: move-background 30s linear infinite;
+  -o-animation: move-background 30s linear infinite;
+  -webkit-animation: move-background 30s linear infinite;
+  animation: move-background 30s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.neon-border {
+  border: 1px solid var(--colors-secondary--500);
+  box-shadow: 0 0 10px var(--colors-secondary--500);
+}
+
+.cyber-text {
+  font-family: "VT323", monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+  
+  .logo {
+    height: 4em;
+    padding: 1em;
+  }
+  
+  .card {
+    padding: 1.5em;
+  }
+}
+

@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: safewords-whatsapp-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: NODE_ENV
+        value: production
+      - key: FRONTEND_URL
+        value: https://silent-signal-words-alert.vercel.app
+    healthCheckPath: /health
