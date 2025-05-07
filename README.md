@@ -3,7 +3,7 @@
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/lucide-icons/lucide/master/icons/shield-alert.svg" alt="SurakshaLink Logo" width="100" height="100" />
-  <h1>SurakshaLink - Your Personal Safety Companion</h1>
+  <h1>SurakshaLink - Inspired by the bond of protection, with a modern twist</h1>
   <p><strong>All Rights Reserved - Copyright (c) 2025 Rehan Suman</strong></p>
 </div>
 
